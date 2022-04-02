@@ -8,20 +8,20 @@
   <link rel="stylesheet" href="./index.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="navigation">
     <img class="navigation__logo" src="./img/logo.png"/>
     <ul class="navigation__links">
       <li>
-        <a href="./index.html#">Strona główna</a>
+        <a class="navigation__link navigation__link--active" href="./index.html#">Strona główna</a>
       </li>
       <li>
-        <a href="./rent.html">Wynajem</a>
+        <a class="navigation__link" href="./rent.html">Wynajem</a>
       </li>
       <li>
-        <a href="./sale.html">
+        <a class="navigation__link" href="./sale.html">
           Sprzedaż
           <svg class="navigation__chevron" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 6.5L6 1.5L1 6.5" stroke="#333333" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,7 +29,7 @@
         </a>
       </li>
       <li>
-        <a href="#contact">Kontakt</a>
+        <a class="navigation__link" href="#contact">Kontakt</a>
       </li>
     </ul>
     <div class="navigation__phone">
@@ -45,18 +45,120 @@
       <p>
         Najlepsze kompleksowe rozwiązania dla branży komunalnej w kraju!
       </p>
-      <button>Sprawdź ofertę</button>
+      <a href="#offer">
+        <button>Sprawdź ofertę</button>
+      </a>
     </div>
     <div class="home__truck">
       <div class="square home__square--left"></div>
       <div class="square home__square--right"></div>
       <img src="./img/truck.png"/>
-      <button class="home__next">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 1V15M8 15L15 8M8 15L1 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>        
-      </button>
+      <a href="#about">
+        <button class="home__next">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 1V15M8 15L15 8M8 15L1 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>       
+        </button>
+      </a> 
     </div>
   </section>
+  <section id="about" class="about">
+    <div class="about__image">
+      <img src="./img/engineer.png"/>
+    </div>
+    <div class="about__content">
+      <h2>O nas</h2>
+      <h3>ZUK Stasi Las</h3>
+      <p>
+        Zakład Usług Komunalnych Krzysztof Goźliński z siedzibą w Stasim Lesie od 1998 roku działa na polskim rynku. Podstawowym zakresem działalności firmy jest sprzedaż pojazdów komunalnych w szczególności śmieciarek. Dodatkowo firma świadczy usługi w zakresie wynajmu pojazdów komunalnych. Dzięki zdobytemu doświadczeniu realizujemy nawet najbardziej skomplikowane zamówienia.
+      </p>
+    </div>
+  </section>
+  <section id="offer" class="offer">
+    <h2>Oferta</h2>
+    <h3>Sprawdź co oferujemy</h3>
+    <div class="offer__list">
+      <div class="offer__block">
+        <div class="offer__truck">
+          <img src="./img/truck_drawing.png"/>
+        </div>
+        <span>Wynajem pojazdów komunalnych</span>
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 13.0001L7 7.00012L1 1.00012" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
+      </div>
+      <div class="offer__block">
+        <div class="offer__truck">
+          <img src="./img/truck_drawing.png"/>
+        </div>
+        <span>Sprzedaż pojazdów komunalnych</span>
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 13.0001L7 7.00012L1 1.00012" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
+      </div>
+      <div class="offer__block">
+        <div class="offer__truck">
+          <img src="./img/truck_drawing.png"/>
+        </div>
+        <span>Sprzedaż części i zabudowy</span>
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 13.0001L7 7.00012L1 1.00012" stroke="#101828" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>          
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <h2>Kontakt</h2>
+    <h3>Zapraszamy do kontaktu</h3>
+    <div class="contact__grid">
+      <img src="./img/map.png"/>
+      <div class="contact__info">
+        <div class="contact__option">
+          <div class="contact__icon">
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+          </div>
+          <div class="contact__text">
+            <span>Zakład Usług Komunalnych Krzysztof Goźliński</span>
+            <p>ul. Główna 17, Stasi Las | 05-140 Serock</p>
+          </div>
+        </div>
+        <div class="contact__option">
+          <div class="contact__icon">
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+          </div>
+          <div class="contact__text">
+            <span>Adres e-mail</span>
+            <p>zukstasilas@wp.pl</p>
+          </div>
+        </div>
+        <div class="contact__option">
+          <div class="contact__icon">
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 10C19 17 10 23 10 23C10 23 1 17 1 10C1 7.61305 1.94821 5.32387 3.63604 3.63604C5.32387 1.94821 7.61305 1 10 1C12.3869 1 14.6761 1.94821 16.364 3.63604C18.0518 5.32387 19 7.61305 19 10Z" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M10 13C11.6569 13 13 11.6569 13 10C13 8.34315 11.6569 7 10 7C8.34315 7 7 8.34315 7 10C7 11.6569 8.34315 13 10 13Z" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>            
+          </div>
+          <div class="contact__text">
+            <span>Numery telefonu</span>
+            <p>603 768 134  |   603 224 633  |  22 782 61 97</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div></div>
+    <div class="footer__divider"></div>
+    <div class="footer__text">
+      <span>&copy; ZUK Stasi Las</span>
+      <span class="footer__dreampire">Zaprojektowano przez: <img class="dreampire-logo" src="./img/dreampire_logo.png"/> </span>
+    </div>
+  </footer>
 </body>
 </html>
