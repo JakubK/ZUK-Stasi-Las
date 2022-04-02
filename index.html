@@ -21,12 +21,12 @@
         <a class="navigation__link" href="./rent.html">Wynajem</a>
       </li>
       <li>
-        <a class="navigation__link" href="./sale.html">
+        <span class="navigation__link">
           Sprzedaż
           <svg class="navigation__chevron" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 6.5L6 1.5L1 6.5" stroke="#333333" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M1 1.5L6 6.5L11 1.5" stroke="#333333" stroke-width="1.67" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-        </a>
+        </span>
       </li>
       <li>
         <a class="navigation__link" href="#contact">Kontakt</a>
@@ -37,6 +37,11 @@
         <path d="M20.9994 16.4881V19.4016C21.0005 19.6721 20.9432 19.9398 20.831 20.1876C20.7188 20.4354 20.5542 20.6579 20.3478 20.8407C20.1415 21.0236 19.8978 21.1628 19.6325 21.2494C19.3672 21.3361 19.0861 21.3683 18.8072 21.3439C15.7128 21.0192 12.7404 19.998 10.1289 18.3624C7.69921 16.8714 5.63926 14.8819 4.09534 12.5354C2.39586 10.0019 1.33824 7.11728 1.00816 4.11541C0.983033 3.84685 1.01608 3.57618 1.1052 3.32063C1.19432 3.06508 1.33757 2.83025 1.52581 2.6311C1.71405 2.43194 1.94317 2.27282 2.19858 2.16387C2.45398 2.05492 2.73008 1.99852 3.0093 1.99826H6.02608C6.5141 1.99362 6.98722 2.16052 7.35725 2.46785C7.72727 2.77518 7.96896 3.20197 8.03727 3.66867C8.1646 4.60106 8.40074 5.51654 8.74118 6.39765C8.87648 6.74525 8.90576 7.12303 8.82556 7.48621C8.74536 7.8494 8.55903 8.18276 8.28867 8.44681L7.01156 9.6802C8.44308 12.1116 10.5276 14.1247 13.0451 15.5072L14.3222 14.2738C14.5956 14.0127 14.9408 13.8328 15.3169 13.7553C15.6929 13.6778 16.0841 13.7061 16.444 13.8368C17.3564 14.1656 18.3043 14.3936 19.2698 14.5166C19.7582 14.5832 20.2044 14.8208 20.5233 15.1843C20.8422 15.5478 21.0116 16.0118 20.9994 16.4881Z" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <p>603 768 134  |   603 224 633  |  22 782 61 97</p>
+    </div>
+    <div id="burger" class="navigation__burger burger">
+      <span class="burger__segment"></span>
+      <span class="burger__segment"></span>
+      <span class="burger__segment"></span>
     </div>
   </nav>
   <section class="home">
@@ -49,10 +54,12 @@
         <button>Sprawdź ofertę</button>
       </a>
     </div>
-    <div class="home__truck">
-      <div class="square home__square--left"></div>
-      <div class="square home__square--right"></div>
-      <img src="./img/truck.png"/>
+    <div class="home__truck-wrapper">
+      <div class="home__truck">
+        <div class="square home__square--left"></div>
+        <div class="square home__square--right"></div>
+        <img src="./img/truck.png"/>
+      </div>
       <a href="#about">
         <button class="home__next">
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +114,7 @@
       </div>
     </div>
   </section>
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2>Kontakt</h2>
     <h3>Zapraszamy do kontaktu</h3>
     <div class="contact__grid">
@@ -157,8 +164,10 @@
     <div class="footer__divider"></div>
     <div class="footer__text">
       <span>&copy; ZUK Stasi Las</span>
+      <div class="footer__divider"></div>
       <span class="footer__dreampire">Zaprojektowano przez: <img class="dreampire-logo" src="./img/dreampire_logo.png"/> </span>
     </div>
   </footer>
+  <script src="./js/navbar.js"></script>
 </body>
 </html>
