@@ -56,11 +56,13 @@ a {
 .navigation__links {
   list-style-type: none;
   display: flex;
+  margin: 0 2em;
 }
 
 .navigation__links .navigation__link {
-  margin: 0 2em;
   cursor: pointer;
+  width: 160px;
+  text-align: center;
 }
 
 .navigation__link, .navigation__phone p {
@@ -294,6 +296,8 @@ a {
     top: 80px;
     flex-direction: column;
     display: none;
+
+    margin-left: 0;
   }
 
   .navigation__links.navigation__links--mobile-active {
@@ -301,8 +305,8 @@ a {
   }
 
   .navigation__links .navigation__link {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin: 1em;
+    width: auto;
   }
 
   .navigation__phone {
@@ -317,6 +321,7 @@ a {
     position: static;
     box-shadow: none;
     border: none;
+    grid-template-columns: 1fr;
   }
 
   .navigation__sale {
