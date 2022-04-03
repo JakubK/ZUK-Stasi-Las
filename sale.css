@@ -1,5 +1,5 @@
 .sale {
-  margin: 2em
+  margin: 2em;
 }
 
 .sale__nav {
@@ -9,7 +9,7 @@
   color: #6E6E6E;
 }
 
-.sale__nav span:nth-child(1) {
+.sale__nav a {
   color: #185E9C;
 }
 

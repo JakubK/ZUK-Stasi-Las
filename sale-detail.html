@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZUK - Stasi Las</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +15,8 @@
   <link rel="stylesheet" href="./css/navbar.css"/>
   <link rel="stylesheet" href="./css/footer.css"/>
 
-  <link rel="stylesheet" href="./sale.css"/>
+  <link rel="stylesheet" href="./sale-detail.css"/>
 
-  <title>ZUK - Stasi Las</title>
 </head>
 <body>
   <nav class="navigation">
@@ -82,157 +82,215 @@
       <span class="burger__segment"></span>
     </div>
   </nav>
-  <section class="sale">
-    <div class="sale__nav">
+  <section class="sale-detail">
+    <div class="sale-detail__nav">
       <span><a href="./index.html">Strona główna</a></span>
       <span>/</span>
-      <span>Sprzedaż pojazdów komunalnych</span>
+      <span><a href="./sale.html">Sprzedaż pojazdów komunalnych</a></span>
     </div>
-    <header class="sale__head">
-      <h2>Sprzedaż pojazdów komunalnych</h2>
-      <p>Aktualnie w naszej ofercie</p>
-    </header>
-    <div class="sale__list">
-      <a href="./sale-detail.html" class="truck">
-        <img class="truck__image" src="./img/new_truck.png"/>
-        <div class="truck__info">
-          <header class="truck__head">
-            <h3>MAN</h3>
-            <p>TGA 26.320</p>
-          </header>
-          <table class="truck__data">
-            <tr>
-              <td>Zabudowa:</td>
-              <td>Ekocel Medium XL</td>
-            </tr>
-            <tr>
-              <td>Pojemność zabudowy:</td>
-              <td>21</td>
-            </tr>
-            <tr>
-              <td>Typ wrzutu:</td>
-              <td>Zoeller Delta 2301</td>
-            </tr>
-          </table>
+    <div class="sale-detail__main">
+      <div class="gallery-nav">
+        <button class="gallery-nav__btn">
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.59 7.40997L6 2.82997L1.41 7.40997L0 5.99997L6 -2.67029e-05L12 5.99997L10.59 7.40997Z" fill="#0C0C0C"/>
+          </svg>            
+        </button>
+        <div class="gallery-nav__frame">
+          <img class="gallery-nav__item" src="./img/new_truck.png"/>
         </div>
-      </a>
-      <a href="./sale-detail.html" class="truck">
-        <img class="truck__image" src="./img/new_truck.png"/>
-        <div class="truck__info">
-          <header class="truck__head">
-            <h3>MAN</h3>
-            <p>TGA 26.320</p>
-          </header>
-          <table class="truck__data">
-            <tr>
-              <td>Zabudowa:</td>
-              <td>Ekocel Medium XL</td>
-            </tr>
-            <tr>
-              <td>Pojemność zabudowy:</td>
-              <td>21</td>
-            </tr>
-            <tr>
-              <td>Typ wrzutu:</td>
-              <td>Zoeller Delta 2301</td>
-            </tr>
-          </table>
+        <div class="gallery-nav__frame">
+          <img class="gallery-nav__item" src="./img/new_truck.png"/>
         </div>
-      </a>
-      <a href="./sale-detail.html" class="truck">
-        <img class="truck__image" src="./img/new_truck.png"/>
-        <div class="truck__info">
-          <header class="truck__head">
-            <h3>MAN</h3>
-            <p>TGA 26.320</p>
-          </header>
-          <table class="truck__data">
-            <tr>
-              <td>Zabudowa:</td>
-              <td>Ekocel Medium XL</td>
-            </tr>
-            <tr>
-              <td>Pojemność zabudowy:</td>
-              <td>21</td>
-            </tr>
-            <tr>
-              <td>Typ wrzutu:</td>
-              <td>Zoeller Delta 2301</td>
-            </tr>
-          </table>
+        <div class="gallery-nav__frame">
+          <img class="gallery-nav__item" src="./img/new_truck.png"/>
         </div>
-      </a>
-      <a href="./sale-detail.html" class="truck">
-        <img class="truck__image" src="./img/new_truck.png"/>
-        <div class="truck__info">
-          <header class="truck__head">
-            <h3>MAN</h3>
-            <p>TGA 26.320</p>
-          </header>
-          <table class="truck__data">
-            <tr>
-              <td>Zabudowa:</td>
-              <td>Ekocel Medium XL</td>
-            </tr>
-            <tr>
-              <td>Pojemność zabudowy:</td>
-              <td>21</td>
-            </tr>
-            <tr>
-              <td>Typ wrzutu:</td>
-              <td>Zoeller Delta 2301</td>
-            </tr>
-          </table>
+        <div class="gallery-nav__frame">
+          <img class="gallery-nav__item" src="./img/new_truck.png"/>
         </div>
-      </a>
-      <a href="./sale-detail.html" class="truck">
-        <img class="truck__image" src="./img/new_truck.png"/>
-        <div class="truck__info">
-          <header class="truck__head">
-            <h3>MAN</h3>
-            <p>TGA 26.320</p>
-          </header>
-          <table class="truck__data">
-            <tr>
-              <td>Zabudowa:</td>
-              <td>Ekocel Medium XL</td>
-            </tr>
-            <tr>
-              <td>Pojemność zabudowy:</td>
-              <td>21</td>
-            </tr>
-            <tr>
-              <td>Typ wrzutu:</td>
-              <td>Zoeller Delta 2301</td>
-            </tr>
-          </table>
+        <button class="gallery-nav__btn">
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.59 7.40997L6 2.82997L1.41 7.40997L0 5.99997L6 -2.67029e-05L12 5.99997L10.59 7.40997Z" fill="#0C0C0C"/>
+          </svg>            
+        </button>
+      </div>
+      <div class="gallery">
+        <button class="gallery__left">
+          <svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.1616 2.6695L4.36912 8.47427L10.1616 14.279L8.37834 16.0622L0.789917 8.47427L8.37834 0.886337L10.1616 2.6695Z" fill="#0C0C0C"/>
+          </svg>                               
+        </button>
+        <img src="./img/new_truck.png"/>
+        <button class="gallery__right">
+          <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.864136 2.49366L6.65664 8.29842L0.864136 14.1032L2.64742 15.8864L10.2359 8.29842L2.64742 0.710495L0.864136 2.49366Z" fill="#0C0C0C"/>
+          </svg>            
+        </button>
+      </div>
+      <div class="sale-detail__brief">
+        <header class="sale-detail__head">
+          <h3>MAN</h3>
+          <p>TGA 26.320</p>
+        </header>
+        <table class="table sale-detail__table">
+          <tr>
+            <td>Zabudowa:</td>
+            <td>Ekocel Medium XL</td>
+          </tr>
+          <tr>
+            <td>Pojemność zabudowy:</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>Typ wrzutu:</td>
+            <td>Zoeller Delta 2301</td>
+          </tr>
+          <tr>
+            <td>Przebieg:</td>
+            <td>120 000 km</td>
+          </tr>
+          <tr>
+            <td>Rok produkcji:</td>
+            <td>2005</td>
+          </tr>
+        </table>
+        <div class="sale-detail__interest">
+          <span>Interesuje Cię właśnie ta oferta?</span>
+          <button>Skontaktuj się z nami</button>
         </div>
-      </a>
-      <a href="./sale-detail.html" class="truck">
-        <img class="truck__image" src="./img/new_truck.png"/>
-        <div class="truck__info">
-          <header class="truck__head">
-            <h3>MAN</h3>
-            <p>TGA 26.320</p>
-          </header>
-          <table class="truck__data">
-            <tr>
-              <td>Zabudowa:</td>
-              <td>Ekocel Medium XL</td>
-            </tr>
-            <tr>
-              <td>Pojemność zabudowy:</td>
-              <td>21</td>
-            </tr>
-            <tr>
-              <td>Typ wrzutu:</td>
-              <td>Zoeller Delta 2301</td>
-            </tr>
-          </table>
+      </div>
+      <div></div>
+      <div class="sale-detail__truck">
+        <h3>Detale</h3>
+        <p>Pojazdu</p>
+        <table class="sale-detail__table">
+          <tr>
+            <td>Marka:</td>
+            <td>MAN</td>
+          </tr>
+          <tr>
+            <td>Model:</td>
+            <td>TGA 26/320</td>
+          </tr>
+          <tr>
+            <td>Moc silnika:</td>
+            <td>320</td>
+          </tr>
+          <tr>
+            <td>Pojemność silnika:</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Paliwo:</td>
+            <td>Diesel</td>
+          </tr>
+          <tr>
+            <td>Norma emisji spalin:</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>Napęd:</td>
+            <td>6x2</td>
+          </tr>
+          <tr>
+            <td>Ilość osi:</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>Rodzaj osi dodatkowej:</td>
+            <td>Wleczona</td>
+          </tr>
+          <tr>
+            <td>Oś skrętna:</td>
+            <td>Tak</td>
+          </tr>
+          <tr>
+            <td>Skrzynia biegów:</td>
+            <td>Automat</td>
+          </tr>
+          <tr>
+            <td>Zawieszenie (przód/tył):</td>
+            <td>Poduszka/poduszka</td>
+          </tr>
+          <tr>
+            <td>Stan opon:</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>Kamera cofania:</td>
+            <td>Tak</td>
+          </tr>
+          <tr>
+            <td>Klimatyzacja:</td>
+            <td>Tak</td>
+          </tr>
+        </table>
+      </div>
+      <div class="sale-detail__truck">
+        <h3>Detale</h3>
+        <p>Zabudowy</p>
+        <table class="sale-detail__table">
+          <tr>
+            <td>Rodzaj zabudowy:</td>
+            <td>Ekocel Medium XL</td>
+          </tr>
+          <tr>
+            <td>Pojemność zabudowy:</td>
+            <td>21</td>
+          </tr>
+          <tr>
+            <td>Waga:</td>
+            <td>Brak</td>
+          </tr>
+          <tr>
+            <td>Typ wrzutu:</td>
+            <td>Zoeller Delta 2301</td>
+          </tr>
+          <tr>
+            <td>Obsługiwane pojemniki:</td>
+            <td>60-110 grzebień + łapy</td>
+          </tr>
+          <tr>
+            <td>Ilość komór:</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Systemy zabezpieczeń:</td>
+            <td>Czujniki w stopniach</td>
+          </tr>
+          <tr>
+            <td>Centralne sterowanie:</td>
+            <td>Tak</td>
+          </tr>
+          <tr>
+            <td>Stopnie dla ładowaczy:</td>
+            <td>Tak</td>
+          </tr>
+        </table>
+      </div>
+      <div></div>
+      <div class="contact">
+        <div class="contact__icon">
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 3C21 1.9 20.1 1 19 1H3C1.9 1 1 1.9 1 3M21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3M21 3L11 10L1 3" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>              
         </div>
-      </a>
+        <div>
+          <h3>Adres e-mail</h3>
+          <p>zukstasilas@wp.pl</p>
+        </div>
+      </div> 
+      <div class="contact">
+        <div class="contact__icon">
+          <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 3C21 1.9 20.1 1 19 1H3C1.9 1 1 1.9 1 3M21 3V15C21 16.1 20.1 17 19 17H3C1.9 17 1 16.1 1 15V3M21 3L11 10L1 3" stroke="#185E9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>              
+        </div>
+        <div>
+          <h3>Numery telefonu</h3>
+          <p>603 768 134  |  603  224 633  |  22 782 61 97</p>
+        </div>
+      </div>
     </div>
-    <button class="sale__more">Więcej ofert</button>
   </section>
   <footer>
     <div></div>
