@@ -50,15 +50,6 @@
   position: relative;
 }
 
-.home__square--left {
-  bottom: 0;
-}
-
-.home__square--right {
-  right: 0;
-  transform: rotate(125.01deg);
-}
-
 .home__next {
   background: #185E9C;
   outline: none;
